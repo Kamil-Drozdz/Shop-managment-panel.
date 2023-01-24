@@ -34,7 +34,7 @@ function App() {
 		setProducts(newProducts);
 	};
 	return (
-		<div className='m-auto mx-20'>
+		<div className='w-auto'>
 			{products.length > 0 ? (
 				<>
 					<ProductsList
@@ -50,7 +50,7 @@ function App() {
 					/>
 				</>
 			) : (
-				<h1 className='flex justify-center items-center h-screen text-3xl'>
+				<h1 className='flex justify-center items-center h-auto mb-12 text-3xl ml-4'>
 					Ups, we don't have anything cool here, adds some products.
 				</h1>
 			)}

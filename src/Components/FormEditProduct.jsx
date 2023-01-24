@@ -6,7 +6,7 @@ function FormEditProduct({ onSave, currentProduct, setCurrentProduct }) {
 
 	return (
 		<form
-			className='fixed bottom-0 left-60 p-4 bg-gray-900 rounded-t-lg flex flex-col justify-center items-center w-60 text-white'
+			className='md:fixed md:bottom-0 md:left-60 p-4 bg-gray-900 rounded-t-lg flex flex-col justify-center items-center mx-20 md:mx-0 md:w-60 text-white'
 			onSubmit={handleSubmit}>
 			<label className='mt-4'>
 				Name:
@@ -26,7 +26,7 @@ function FormEditProduct({ onSave, currentProduct, setCurrentProduct }) {
 					onChange={e => setCurrentProduct({ ...currentProduct, price: e.target.value })}
 				/>
 			</label>
-			<label>
+			<label className='mt-4'>
 				Image:
 				<input
 					className='text-black'
@@ -35,7 +35,7 @@ function FormEditProduct({ onSave, currentProduct, setCurrentProduct }) {
 					onChange={e => setCurrentProduct({ ...currentProduct, image: e.target.value })}
 				/>
 			</label>
-			<label className='my-2 bg-gr'>
+			<label className='my-2 bg-gray-900'>
 				Availability:
 				<select
 					className='bg-gray-900 mt-4'

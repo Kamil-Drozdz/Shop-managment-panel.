@@ -9,10 +9,10 @@ function ProductCard(props) {
 			<p>Price: {price}</p>
 			<p>Availability: {availability}</p>
 			<div className='flex m-2'>
-				<button className='p-2  mr-2 bg-orange-500 text-black rounded-lg' onClick={onEdit}>
+				<button className='md:p-2 mr-2 bg-orange-500 text-black rounded-lg' onClick={onEdit}>
 					Edit Product
 				</button>
-				<button className='p-2 bg-orange-500 text-black rounded-lg' onClick={() => onDelete(id)}>
+				<button className='md:p-2 bg-orange-500 text-black rounded-lg' onClick={() => onDelete(id)}>
 					Delete Product
 				</button>
 			</div>
