@@ -31,7 +31,7 @@ function FormAddProduct({ onAdd, counter, setCounter }) {
 
 	return (
 		<form
-			className='fixed bottom-0 left-0 p-4 bg-gray-900 rounded-t-lg flex flex-col justify-center items-center w-60 text-white'
+			className=' md:fixed bottom-0 left-0 p-4 bg-gray-900 rounded-t-lg flex flex-col justify-center items-center mx-20 md:mx-0 md:w-60 text-white'
 			onSubmit={handleSubmit}>
 			<label className='mt-4'>
 				Name:
@@ -43,7 +43,7 @@ function FormAddProduct({ onAdd, counter, setCounter }) {
 				<input type='number' className='text-black' value={price} onChange={e => setPrice(e.target.value)} />
 				{errors.price && <span className='text-red-600'>{errors.price}</span>}
 			</label>
-			<label>
+			<label className='mt-4'>
 				Image:
 				<input type='text' className='text-black' value={image} onChange={e => setImage(e.target.value)} />
 				{errors.image && <span className='text-red-600'>{errors.image}</span>}
@@ -55,7 +55,7 @@ function FormAddProduct({ onAdd, counter, setCounter }) {
 					<option value='unavailable'>Unavailable</option>
 				</select>
 			</label>
-			<button className='p-2  mr-2 bg-orange-500 text-black rounded-lg' type='submit'>
+			<button className='p-2 mr-2 bg-orange-500 text-black rounded-lg' type='submit'>
 				Add Product
 			</button>
 		</form>
